@@ -1,3 +1,10 @@
+-- Spatial Analysis for LocateIQ Dataset
+-- Source datasets:
+-- 1. LocateIQ1
+-- 2. OpenStreetMap Points of Interest (POI)
+-- Purpose:
+-- Generate spatial features (services count, competitors count, population indicators)
+
 ALTER TABLE "LocateIQ"
 ADD COLUMN geom geometry(Point, 4326);
 UPDATE "LocateIQ"
